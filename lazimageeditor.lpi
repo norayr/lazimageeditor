@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <Title Value="lazimageeditor"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <VersionInfo>
+      <StringTable ProductVersion=""/>
+    </VersionInfo>
+    <BuildModes Count="2">
+      <Item1 Name="Debug" Default="True"/>
+      <Item2 Name="Release">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <PathDelim Value="\"/>
+          <Target>
+            <Filename Value="lazimageeditor"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="."/>
+            <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <UseLineInfoUnit Value="False"/>
+              <StripSymbols Value="True"/>
+            </Debugging>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+          <Other>
+            <CompilerMessages>
+              <UseMsgFile Value="True"/>
+            </CompilerMessages>
+            <CompilerPath Value="$(CompPath)"/>
+          </Other>
+        </CompilerOptions>
+      </Item2>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="\usr\bin\xterm -T 'Lazarus Run Output' -e $(LazarusDir)\tools\runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="3">
+      <Item1>
+        <PackageName Value="LCLBase"/>
+        <MinVersion Major="1" Release="1" Valid="True"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LazColorPalette"/>
+        <DefaultFilename Value="..\..\components\colorpalette\lazcolorpalette.lpk" Prefer="True"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="LCL"/>
+      </Item3>
+    </RequiredPackages>
+    <Units Count="16">
+      <Unit0>
+        <Filename Value="lazimageeditor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="lazimageeditor"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Main"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="picturectrls.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="PictureCtrls"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="test.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="TestForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Test"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="newdialog.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="NewDialogForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="NewDialog"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="resizedialog.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ResizeDialogForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="ResizeDialog"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="resizepaperdialog.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ResizePaperDialogForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="ResizePaperDialog"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="aboutdialog.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AboutDialogForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="AboutDialog"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="picturemanager.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="PictureManager"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="picturedialog.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="PictureDialogForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="PictureDialog"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="DLBitmap.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DLBitmap"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="DLBmpUtils.inc"/>
+        <IsPartOfProject Value="True"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="iconstrconsts.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="IconStrConsts"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="appsettings.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="appsettings"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="lieconstants.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="lieconstants"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="iconsizeselection.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="SelectIconSizeForm"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="iconsizeselection"/>
+      </Unit15>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="lazimageeditor"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="."/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf2Set"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerMessages>
+        <UseMsgFile Value="True"/>
+      </CompilerMessages>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

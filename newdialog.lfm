@@ -1,0 +1,126 @@
+object NewDialogForm: TNewDialogForm
+  Left = 478
+  Height = 185
+  Top = 79
+  Width = 291
+  HorzScrollBar.Page = 248
+  VertScrollBar.Page = 184
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'New picture'
+  ClientHeight = 185
+  ClientWidth = 291
+  Position = poMainFormCenter
+  LCLVersion = '0.9.29'
+  object GroupBoxProperties: TGroupBox
+    Left = 8
+    Height = 136
+    Top = 6
+    Width = 275
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = 'Properties'
+    ClientHeight = 118
+    ClientWidth = 271
+    TabOrder = 0
+    object LabelWidth: TLabel
+      Left = 16
+      Height = 14
+      Top = 14
+      Width = 43
+      Caption = 'Width:'
+      ParentColor = False
+    end
+    object LabelHeight: TLabel
+      Left = 16
+      Height = 14
+      Top = 50
+      Width = 50
+      Caption = 'Height:'
+      ParentColor = False
+    end
+    object LabelPaperColor: TLabel
+      Left = 16
+      Height = 14
+      Top = 86
+      Width = 85
+      Caption = 'Paper color:'
+      ParentColor = False
+    end
+    object ColorButtonPaper: TColorButton
+      Left = 118
+      Height = 25
+      Top = 82
+      Width = 129
+      BorderWidth = 2
+      ButtonColorSize = 16
+      ButtonColor = clWhite
+      Caption = 'Change...'
+    end
+    object EditWidth: TEdit
+      Left = 118
+      Height = 21
+      Top = 8
+      Width = 112
+      TabOrder = 0
+      Text = '512'
+    end
+    object EditHeight: TEdit
+      Left = 118
+      Height = 21
+      Top = 44
+      Width = 112
+      TabOrder = 1
+      Text = '512'
+    end
+    object UpDownWidth: TUpDown
+      Left = 230
+      Height = 17
+      Top = 10
+      Width = 17
+      Associate = EditWidth
+      Min = 1
+      Max = 4096
+      Position = 512
+      TabOrder = 2
+      Thousands = False
+      Wrap = False
+    end
+    object UpDownHeight: TUpDown
+      Left = 230
+      Height = 17
+      Top = 46
+      Width = 17
+      Associate = EditHeight
+      Min = 1
+      Max = 4096
+      Position = 512
+      TabOrder = 3
+      Thousands = False
+      Wrap = False
+    end
+  end
+  object ButtonCancel: TButton
+    Left = 208
+    Height = 25
+    Top = 149
+    Width = 75
+    Anchors = [akRight, akBottom]
+    BorderSpacing.InnerBorder = 4
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 1
+  end
+  object ButtonOK: TButton
+    Left = 126
+    Height = 25
+    Top = 149
+    Width = 75
+    Anchors = [akRight, akBottom]
+    BorderSpacing.InnerBorder = 4
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    TabOrder = 2
+  end
+end

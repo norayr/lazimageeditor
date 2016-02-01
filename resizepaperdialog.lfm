@@ -1,0 +1,177 @@
+inherited ResizePaperDialogForm: TResizePaperDialogForm
+  Height = 507
+  Width = 362
+  Caption = 'Resize paper'
+  ClientHeight = 507
+  ClientWidth = 362
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  object PanelPreview: TPanel[0]
+    Left = 6
+    Height = 264
+    Top = 6
+    Width = 350
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BevelOuter = bvNone
+    Color = clBlack
+    FullRepaint = False
+    ParentColor = False
+    TabOrder = 0
+  end
+  object GroupBoxProperties: TGroupBox[1]
+    Left = 8
+    Height = 186
+    Top = 276
+    Width = 346
+    Anchors = [akLeft, akRight, akBottom]
+    Caption = 'Properties'
+    ClientHeight = 168
+    ClientWidth = 342
+    TabOrder = 1
+    object LabelWidth: TLabel
+      Left = 16
+      Height = 14
+      Top = 44
+      Width = 85
+      Caption = 'Paper width:'
+      ParentColor = False
+    end
+    object LabelHeight: TLabel
+      Left = 16
+      Height = 14
+      Top = 80
+      Width = 92
+      Caption = 'Paper height:'
+      ParentColor = False
+    end
+    object LabelPaperColor: TLabel
+      Left = 16
+      Height = 14
+      Top = 140
+      Width = 85
+      Caption = 'Paper color:'
+      ParentColor = False
+    end
+    object LabelPicturePosition: TLabel
+      Left = 16
+      Height = 14
+      Top = 13
+      Width = 120
+      Caption = 'Picture position:'
+      ParentColor = False
+    end
+    object ColorButtonPaper: TColorButton
+      Left = 148
+      Height = 25
+      Top = 135
+      Width = 163
+      BorderWidth = 2
+      ButtonColorSize = 16
+      ButtonColor = clWhite
+      Caption = 'Change...'
+      OnColorChanged = ColorButtonPaperColorChanged
+    end
+    object EditHeight: TEdit
+      Left = 148
+      Height = 21
+      Top = 74
+      Width = 146
+      OnChange = EditHeightChange
+      TabOrder = 0
+      Text = '512'
+    end
+    object UpDownWidth: TUpDown
+      Left = 294
+      Height = 21
+      Top = 40
+      Width = 17
+      Associate = EditWidth
+      Min = 1
+      Max = 4096
+      Position = 512
+      TabOrder = 4
+      Thousands = False
+      Wrap = False
+    end
+    object UpDownHeight: TUpDown
+      Left = 294
+      Height = 21
+      Top = 74
+      Width = 17
+      Associate = EditHeight
+      Min = 1
+      Max = 4096
+      Position = 512
+      TabOrder = 5
+      Thousands = False
+      Wrap = False
+    end
+    object CheckBoxAspectRatio: TCheckBox
+      Left = 16
+      Height = 19
+      Top = 110
+      Width = 167
+      Caption = 'Preserve aspect ratio'
+      Checked = True
+      OnChange = CheckBoxAspectRatioChange
+      State = cbChecked
+      TabOrder = 1
+    end
+    object ComboBoxPicturePosition: TComboBox
+      Left = 148
+      Height = 21
+      Top = 8
+      Width = 176
+      ItemHeight = 13
+      ItemIndex = 0
+      Items.Strings = (
+        'Top Left'
+        'Top Center'
+        'Top Right'
+        'Center Left'
+        'Centered'
+        'Center Right'
+        'Bottom Left'
+        'Bottom Center'
+        'Bottom Right'
+      )
+      OnChange = ComboBoxPicturePositionChange
+      Style = csDropDownList
+      TabOrder = 2
+      Text = 'Top Left'
+    end
+    object EditWidth: TEdit
+      Left = 148
+      Height = 21
+      Top = 40
+      Width = 146
+      OnChange = EditWidthChange
+      TabOrder = 3
+      Text = '512'
+    end
+  end
+  object ButtonOK: TButton[2]
+    Left = 198
+    Height = 25
+    Top = 474
+    Width = 75
+    Anchors = [akRight, akBottom]
+    BorderSpacing.InnerBorder = 4
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    TabOrder = 2
+  end
+  object ButtonCancel: TButton[3]
+    Left = 279
+    Height = 25
+    Top = 474
+    Width = 75
+    Anchors = [akRight, akBottom]
+    BorderSpacing.InnerBorder = 4
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 3
+  end
+end
